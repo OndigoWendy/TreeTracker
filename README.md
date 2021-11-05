@@ -1,6 +1,6 @@
-# NeTracker
+# TreeTracker
 
-This is  an application that utilizes the UsageStatsManager , an API introduced in Android 5.0 Lollipop (API Level 21) which allows us to retrieve statistics about the usage of the apps installed on the device.This app uses the api to give third party opinions about other app operations,allowing the user to have more controll over their device.
+This is  an application allows a user to access weather details and track records of growing plants.
 ## Table of contents
 * [Project Name](#Project)
 * [Author](#Author)
@@ -12,6 +12,7 @@ This is  an application that utilizes the UsageStatsManager , an API introduced 
 
 #### By
 **Wendy Ondigo**
+**Judy Rop**
 
 
 ## Technologies
@@ -38,7 +39,7 @@ To run the application in your terminal:
 ### Behaviour Driven Development
 | This Program should handle                       | Input example | Output example                                   |
 |:------------------------------------------------|---------------|--------------------------------------------------|
-Show app usage statistics,especially network traffic.| Enable app permissions by user |Give/recommend course of action.
+Show weather statistics.| Enter plant details and query weather details |Display plant details.
 
 
 ## Known Bugs
