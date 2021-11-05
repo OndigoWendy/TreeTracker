@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/img"
@@ -14,36 +15,40 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.moringaschool.treecordbook.trees.HomeActivity"
-            android:label="PLant Tracker"
-            android:exported="true">
+            android:name=".trees.data.UserAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".trees.data.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".trees.HomeActivity"
+            android:exported="true"
+            android:label="PLant Tracker">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.moringaschool.treecordbook.trees.EditorActivity"
+            android:name=".trees.EditorActivity"
             android:label="@string/editor_activity_title_new_pet"
-            android:theme="@style/EditorTheme"
-            android:parentActivityName="com.moringaschool.treecordbook.trees.CatalogActivity">
-" >
+            android:parentActivityName=".trees.CatalogActivity"
+            android:theme="@style/EditorTheme">
+            " >
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.moringaschool.treecordbook.trees.HomeActivity" />
         </activity>
-        <activity android:name="com.moringaschool.treecordbook.trees.CitySearch"></activity>
-        <activity android:name="com.moringaschool.treecordbook.trees.MainActivity"></activity>
-        <activity android:name="com.moringaschool.treecordbook.trees.CatalogActivity"></activity>
-
-
+        <activity android:name=".trees.CitySearch" />
+        <activity android:name=".trees.MainActivity" />
+        <activity android:name=".trees.CatalogActivity" />
 
         <provider
-            android:name="com.moringaschool.treecordbook.trees.data.PlantsProvider"
+            android:name=".trees.data.PlantsProvider"
             android:authorities="com.example.android.pets"
             android:exported="false" />
-
     </application>
 
 </manifest>
