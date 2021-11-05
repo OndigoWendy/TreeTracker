@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moringaschool.treecordbook.trees.HomeActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/appback11"
+        app:srcCompat="@drawable/appback11" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Weather for You and Your Plants"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="60sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:id="@+id/appNameTextView"/>-->
+
+    <TextView
+        android:id="@+id/id_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/helvatica"
+        android:paddingRight="5dp"
+        android:text="HOME"
+        android:textAllCaps="true"
+        android:textColor="@color/editorColorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:layout_toEndOf="@id/id_city"
+        android:src="@drawable/locationsicon"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/id_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/opensans"
+        android:text="FRI, JUN 26"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/id_weatherImage"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/id_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:alpha="0.6"
+        android:padding="10dp"
+        android:src="@drawable/w03d" />
+
+
+    <Button
+        android:id="@+id/CatalogButton"
+        android:layout_width="143dp"
+        android:layout_height="135dp"
+        android:layout_above="@+id/savedBooksButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="211dp"
+        android:layout_marginLeft="211dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/tree"
+        android:text="MY PLANTS"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/findBooksButton"
+        android:layout_width="144dp"
+        android:layout_height="139dp"
+        android:layout_above="@+id/savedBooksButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/locationsicon"
+        android:text="WEATHER TODAY"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/savedBooksButton"
+        android:layout_width="173dp"
+        android:layout_height="157dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginBottom="6dp"
+        android:text="WEATHER AROUND ME"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        android:background="@drawable/appback3"/>
+</RelativeLayout>
