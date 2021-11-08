@@ -88,7 +88,6 @@
         android:layout_marginLeft="211dp"
         android:layout_marginBottom="28dp"
         android:background="@drawable/tree"
-        android:text="MY PLANTS"
         android:textColor="@color/white"
         android:visibility="visible" />
 
@@ -99,11 +98,10 @@
         android:layout_above="@+id/savedBooksButton"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginLeft="45dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
         android:layout_marginBottom="26dp"
-        android:background="@drawable/locationsicon"
-        android:text="WEATHER TODAY"
+        android:background="@drawable/weather"
         android:textColor="@color/white"
         android:visibility="visible" />
 
